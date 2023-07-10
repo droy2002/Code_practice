@@ -4,7 +4,7 @@
 using namespace std;
 
 int minOpToPalindrome(vector<int>& arr) {
-    std::vector<int> tempArr = arr;  // Create a copy of the original array
+    vector<int> tempArr = arr;  // Create a copy of the original array
     int count = 0;
     int i = 0;
     int j = tempArr.size() - 1;
@@ -32,7 +32,7 @@ int main() {
 
     int operations = minOpToPalindrome(arr);
 
-    cout << "Minimum number of operations to make the array palindrome: " << operations << std::endl;
+    cout << "Minimum number of operations to make the array palindrome: " << operations << endl;
 
     return 0;
 }
